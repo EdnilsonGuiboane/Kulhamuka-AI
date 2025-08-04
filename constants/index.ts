@@ -1,4 +1,4 @@
-/*import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
+//import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
 import { z } from "zod";
 
 export const mappings = {
@@ -97,7 +97,7 @@ export const mappings = {
   "aws amplify": "amplify",
 };
 
-export const interviewer: CreateAssistantDTO = {
+/**export const interviewer: CreateAssistantDTO = {
   name: "Interviewer",
   firstMessage:
     "Hello! Thank you for taking the time to speak with me today. I'm excited to learn more about you and your experience.",
@@ -154,7 +154,7 @@ End the conversation on a polite and positive note.
     ],
   },
 };
-
+**/
 export const feedbackSchema = z.object({
   totalScore: z.number(),
   categoryScores: z.tuple([
@@ -209,7 +209,7 @@ export const dummyInterviews: Interview[] = [
     id: "1",
     userId: "user1",
     role: "Frontend Developer",
-    type: "Technical",
+    type: "Área Técnica",
     techstack: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
     level: "Junior",
     questions: ["What is React?"],
@@ -220,7 +220,7 @@ export const dummyInterviews: Interview[] = [
     id: "2",
     userId: "user1",
     role: "Full Stack Developer",
-    type: "Mixed",
+    type: "Mista",
     techstack: ["Node.js", "Express", "MongoDB", "React"],
     level: "Senior",
     questions: ["What is Node.js?"],
@@ -228,4 +228,3 @@ export const dummyInterviews: Interview[] = [
     createdAt: "2024-03-14T15:30:00Z",
   },
 ];
-**/
